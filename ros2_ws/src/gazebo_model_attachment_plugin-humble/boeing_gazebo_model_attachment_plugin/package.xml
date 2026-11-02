@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="3">
+    <name>boeing_gazebo_model_attachment_plugin</name>
+    <version>1.0.3</version>
+    <description>Model Attachment Plugin</description>
+    <maintainer email="Jason.Cochrane@boeing.com">Boeing</maintainer>
+    <maintainer email="christopher.mcdermott2@boeing.com">Boeing</maintainer>
+    <maintainer email="beau.colley-allerton@boeing.com">Boeing</maintainer>
+    <author>Boeing</author>
+    <license>Apache-2.0</license>
+
+    <buildtool_depend>ament_cmake</buildtool_depend>
+    <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+    <depend>gazebo_dev</depend>
+    <depend>gazebo_msgs</depend>
+    <depend>gazebo_ros</depend>
+    <depend>rclcpp</depend>
+    <depend>std_msgs</depend>
+    <depend>boeing_gazebo_model_attachment_plugin_msgs</depend>
+
+    <build_depend>rosidl_default_generators</build_depend>
+    <exec_depend>rosidl_default_runtime</exec_depend>
+    <member_of_group>rosidl_interface_packages</member_of_group>
+
+    <exec_depend>rclpy</exec_depend>
+
+    <test_depend>launch_testing_ament_cmake</test_depend>
+    <test_depend>ros2launch</test_depend>
+
+    <export>
+        <build_type>ament_cmake</build_type>
+        <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}" />
+    </export>
+</package>

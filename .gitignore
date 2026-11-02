@@ -1,0 +1,23 @@
+# ===== 原始压缩包：已解压，本地保留，不入库 =====
+# PX4-Autopilot-1.17.0.zip 单文件 275 MiB，超过 GitHub 100 MiB 单文件硬限制，push 会被拒绝
+*.zip
+
+# ===== 第三方飞控源码：397 MB / 13k 文件，按 README 从官方仓库取 v1.17.0 即可 =====
+# 如需一并入库，删除下面这一行（注意仓库体积将达 700 MB 以上）
+PX4-Autopilot-1.17.0/
+
+# ===== colcon 构建产物：可由 ros2_ws/src 重新编译，约 298 MB =====
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# ===== px4_msgs 自带的嵌套 git 仓库（已改名，留在本地不提交）=====
+ros2_ws/src/px4_msgs/.git_px4msgs_bak/
+
+# ===== Python 缓存 =====
+__pycache__/
+*.pyc
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db

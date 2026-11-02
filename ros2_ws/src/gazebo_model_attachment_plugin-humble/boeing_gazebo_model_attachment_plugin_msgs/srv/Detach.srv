@@ -1,0 +1,7 @@
+string joint_name
+string model_name_1
+string model_name_2
+---
+bool success
+string message
+

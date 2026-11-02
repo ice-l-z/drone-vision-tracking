@@ -1,0 +1,5 @@
+repositories:
+  gazebo_no_physicis_plugin:
+    type: git
+    url: git@gitlab.com:mtdi/pi9419/pi9419-sw/gazebo-plugins/gazebo_no_physics_plugin.git
+    version: humble
